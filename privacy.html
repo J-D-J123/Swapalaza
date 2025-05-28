@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Swapalza</title>
+  <style>
+    :root {
+      --bg: #000;
+      --glass: rgba(255, 255, 255, 0.05);
+      --blur: 16px;
+      --text: #f1f5f9;
+      --accent: #38bdf8;
+      --link: #60a5fa;
+      --heading: #e2e8f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(var(--blur));
+      background: var(--glass);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .privacy-header {
+      background: linear-gradient(270deg, #0ea5e9, #3b82f6, #8b5cf6);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: white;
+      margin-bottom: 2rem;
+      border-radius: 0 0 1rem 1rem;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--heading);
+      font-size: 1.8rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: var(--heading);
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .toc {
+      background: var(--glass);
+      backdrop-filter: blur(var(--blur));
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      margin: 2rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .toc h3 {
+      margin-top: 0;
+    }
+
+    .toc ul {
+      padding-left: 1.5rem;
+      list-style-type: none;
+    }
+
+    .toc li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toc a {
+      display: block;
+      padding: 0.25rem 0;
+    }
+
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .highlight-box strong {
+      color: var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: var(--glass);
+      backdrop-filter: blur(var(--blur));
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.05);
+      font-weight: 600;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .last-updated {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+     <div class="logo"><a href="index.html" style="color: var(--accent); text-decoration: none;">Swapalza</a></div>
+    <div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="privacy-header">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated May 28, 2025</p>
+  </div>
+
+  <div class="container">
+    <div class="highlight-box">
+      <strong>Key Points:</strong> This summary provides key points from our Privacy Notice. 
+      <a href="#toc">View full table of contents</a> below for details.
+    </div>
+
+    <h2 id="infocollect">1. What Information Do We Collect?</h2>
+    
+    <h3>Personal information you disclose to us</h3>
+    <p>We collect personal information that you voluntarily provide when you:</p>
+    <ul>
+      <li>Register on our Services</li>
+      <li>Participate in activities on the Services</li>
+      <li>Otherwise contact us</li>
+    </ul>
+
+    <p><strong>Personal Information Provided by You:</strong> The personal information we collect may include:</p>
+    <ul>
+      <li>Names</li>
+      <li>Email addresses</li>
+      <li>Mailing addresses</li>
+      <li>Usernames</li>
+      <li>Passwords</li>
+    </ul>
+
+    <h3>Information automatically collected</h3>
+    <p>We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity but may include device and usage information.</p>
+
+    <h2 id="infouse">2. How Do We Process Your Information?</h2>
+    <p>We process your information to:</p>
+    <ul>
+      <li>Facilitate account creation and authentication</li>
+      <li>Enable user-to-user communications</li>
+      <li>Deliver targeted advertising</li>
+      <li>Evaluate and improve our Services</li>
+      <li>Identify usage trends</li>
+    </ul>
+
+    <h2 id="whoshare">3. When And With Whom Do We Share Your Personal Information?</h2>
+    <p>We may share information in specific situations including:</p>
+    <ul>
+      <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with a merger or sale of assets</li>
+      <li><strong>Other Users:</strong> When you interact with public areas of the Services, other users may view your activity</li>
+    </ul>
+
+    <div class="toc" id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#infocollect">1. What Information Do We Collect?</a></li>
+        <li><a href="#infouse">2. How Do We Process Your Information?</a></li>
+        <li><a href="#whoshare">3. When And With Whom Do We Share Your Personal Information?</a></li>
+        <li><a href="#3pwebsites">4. What Is Our Stance On Third-Party Websites?</a></li>
+        <li><a href="#cookies">5. Do We Use Cookies And Other Tracking Technologies?</a></li>
+        <li><a href="#inforetain">6. How Long Do We Keep Your Information?</a></li>
+        <li><a href="#infosafe">7. How Do We Keep Your Information Safe?</a></li>
+        <li><a href="#infominors">8. Do We Collect Information From Minors?</a></li>
+        <li><a href="#privacyrights">9. What Are Your Privacy Rights?</a></li>
+        <li><a href="#DNT">10. Controls For Do-Not-Track Features</a></li>
+        <li><a href="#uslaws">11. Do United States Residents Have Specific Privacy Rights?</a></li>
+        <li><a href="#policyupdates">12. Do We Make Updates To This Notice?</a></li>
+        <li><a href="#contact">13. How Can You Contact Us About This Notice?</a></li>
+        <li><a href="#request">14. How Can You Review, Update, Or Delete The Data We Collect From You?</a></li>
+      </ul>
+    </div>
+
+    <h2 id="3pwebsites">4. What Is Our Stance On Third-Party Websites?</h2>
+    <p>The Services may link to third-party websites or contain advertisements from third parties that are not affiliated with us. We cannot guarantee the safety and privacy of data you provide to any third parties.</p>
+
+    <h2 id="cookies">5. Do We Use Cookies And Other Tracking Technologies?</h2>
+    <p>We may use cookies and similar tracking technologies to collect and store your information. We use these technologies to maintain security, prevent crashes, fix bugs, and save preferences.</p>
+
+    <h2 id="inforetain">6. How Long Do We Keep Your Information?</h2>
+    <p>We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</p>
+
+    <h2 id="infosafe">7. How Do We Keep Your Information Safe?</h2>
+    <p>We have implemented appropriate security measures designed to protect your personal information. However, no electronic transmission over the Internet can be guaranteed to be 100% secure.</p>
+
+    <h2 id="infominors">8. Do We Collect Information From Minors?</h2>
+    <p>We do not knowingly collect data from or market to children under 18 years of age.</p>
+
+    <h2 id="privacyrights">9. What Are Your Privacy Rights?</h2>
+    <p>Depending on where you are located, you may have rights including:</p>
+    <ul>
+      <li>Right to know whether we process your personal data</li>
+      <li>Right to access your personal data</li>
+      <li>Right to correct inaccuracies</li>
+      <li>Right to request deletion</li>
+      <li>Right to obtain a copy of your data</li>
+    </ul>
+
+    <h2 id="DNT">10. Controls For Do-Not-Track Features</h2>
+    <p>We do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online.</p>
+
+    <h2 id="uslaws">11. Do United States Residents Have Specific Privacy Rights?</h2>
+    <p>If you are a resident of certain US states, you may have additional rights regarding your personal information.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Examples</th>
+          <th>Collected</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A. Identifiers</td>
+          <td>Contact details like name, email, address</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <td>B. Protected classification characteristics</td>
+          <td>Gender, age, race, ethnicity</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>C. Commercial information</td>
+          <td>Purchase history, payment information</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <td>D. Biometric information</td>
+          <td>Fingerprints, voiceprints</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>E. Internet activity</td>
+          <td>Browsing history, search history</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>F. Geolocation data</td>
+          <td>Device location</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>G. Audio, electronic, sensory data</td>
+          <td>Images, audio, video recordings</td>
+          <td>YES</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="policyupdates">12. Do We Make Updates To This Notice?</h2>
+    <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date.</p>
+
+    <h2 id="contact">13. How Can You Contact Us About This Notice?</h2>
+    <p>If you have questions or comments about this notice, you may contact us at:</p>
+    <p>
+      Swapalza<br>
+      __________<br>
+      __________<br>
+      __________
+    </p>
+
+    <h2 id="request">14. How Can You Review, Update, Or Delete The Data We Collect From You?</h2>
+    <p>You have the right to request access to, update, or delete your personal information. To make such a request, please visit: <a href="#">__________</a></p>
+
+    <a href="#" class="back-to-top">Back to top ↑</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Swapalza. All rights reserved.
+  </footer>
+
+</body>
+</html>

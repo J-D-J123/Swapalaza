@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swapalza – EDU Exchange Marketplace</title>
+  <style>
+    :root {
+      --bg: #000;
+      --glass: rgba(255, 255, 255, 0.05);
+      --blur: 16px;
+      --text: #f1f5f9;
+      --accent: #38bdf8;
+      --link: #60a5fa;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(270deg, #0ea5e9, #3b82f6, #8b5cf6);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(var(--blur));
+      background: var(--glass);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #000;
+    }
+
+    .card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+        border-radius: 1rem;
+        padding: 2rem;
+        backdrop-filter: blur(var(--blur));
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: var(--text);
+        }
+
+    .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .card a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+     <div class="logo"><a href="index.html" style="color: var(--accent); text-decoration: none;">Swapalza</a></div>
+  <div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#policies">Policies</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Welcome to Swapalza</h1>
+    <p>The trusted college marketplace. Trade safely with .edu users.</p>
+  </header>
+
+  <main class="main">
+    <div class="card">
+      <h2>📦 List Your Items</h2>
+      <p>Easily list textbooks, electronics, furniture, and more – all for your campus.</p>
+    </div>
+    <div class="card">
+      <h2>🎓 Verified Student Community</h2>
+      <p>Only students with verified .edu emails can buy or sell – safer trades guaranteed.</p>
+    </div>
+    <div class="card">
+      <h2>🚚 Pickup or Delivery</h2>
+      <p>Choose between meeting up or local delivery options for your convenience.</p>
+    </div>
+  </main>
+
+  <section id="policies" class="main">
+    <div class="card">
+      <h2>🔐 Privacy Policy</h2>
+      <p>We respect your data. No sales, no spam. View our full <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+    <div class="card">
+      <h2>📄 Terms of Service</h2>
+      <p>Using Swapalza means you agree to fair use. See our <a href="terms.html">terms of service</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Swapalza. All rights reserved.
+  </footer>
+
+</body>
+</html>
